@@ -2,8 +2,9 @@
 
 function palindrome(str){
 	let start=0, end=str.length-1;
+	let strr=str.toLowerCase();
 	while(end>=start){
-		if(str.charAt(start)!=str.charAt(end)){
+		if(strr.charAt(start)!=strr.charAt(end)){
 			return false;
 		}
 		end--;
